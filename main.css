@@ -1,0 +1,298 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased; }
+
+.main-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f5f9;
+  z-index: 1; }
+
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+ul li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+
+.iphone {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translateX(-50%) translateY(-50%);
+  transform-origin: -10px 60px;
+  width: 330px;
+  height: 650px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 6px 4px #9593ad; }
+  .iphone.smart-1 {
+    background: #e5e0f3; }
+  .iphone.smart-2 {
+    background: #a9d5be;
+    z-index: -1;
+    animation: smart1 1.2s forwards; }
+    .iphone.smart-2 .iphone-main .iphone-buttons > li {
+      background: #a9d5be; }
+      .iphone.smart-2 .iphone-main .iphone-buttons > li.lock {
+        background: #a9d5be; }
+    .iphone.smart-2 .iphone-main .iphone-camera .cameras > div {
+      border: 4px solid #a9d5be; }
+    .iphone.smart-2 .iphone-main .iphone-camera .cameras .sensors .sensor-2 {
+      border: 2px solid #a9d5be; }
+    .iphone.smart-2 .iphone-antenna > li {
+      background: #a9d5be; }
+  .iphone.smart-3 {
+    background: #efd671;
+    z-index: -2;
+    animation: smart2 1.7s forwards; }
+    .iphone.smart-3 .iphone-main .iphone-buttons > li {
+      background: #efd671; }
+      .iphone.smart-3 .iphone-main .iphone-buttons > li.lock {
+        background: #efd671; }
+    .iphone.smart-3 .iphone-main .iphone-camera .cameras > div {
+      border: 4px solid #efd671; }
+    .iphone.smart-3 .iphone-main .iphone-camera .cameras .sensors .sensor-2 {
+      border: 2px solid #efd671; }
+    .iphone.smart-3 .iphone-antenna > li {
+      background: #efd671; }
+  .iphone.smart-4 {
+    background: #fbf8ef;
+    z-index: -3;
+    animation: smart3 1.7s forwards; }
+    .iphone.smart-4 .iphone-main .iphone-buttons > li {
+      background: #fbf8ef; }
+      .iphone.smart-4 .iphone-main .iphone-buttons > li.lock {
+        background: #fbf8ef; }
+    .iphone.smart-4 .iphone-main .iphone-camera .cameras > div {
+      border: 4px solid #fbf8ef; }
+    .iphone.smart-4 .iphone-main .iphone-camera .cameras .sensors .sensor-2 {
+      border: 2px solid #fbf8ef; }
+    .iphone.smart-4 .iphone-antenna > li {
+      background: #fbf8ef; }
+  .iphone.smart-5 {
+    background: #2d2f2e;
+    z-index: -4;
+    animation: smart4 1.7s forwards; }
+    .iphone.smart-5 .iphone-main .iphone-buttons > li {
+      background: #2d2f2e; }
+      .iphone.smart-5 .iphone-main .iphone-buttons > li.lock {
+        background: #2d2f2e; }
+    .iphone.smart-5 .iphone-main .iphone-camera .cameras > div {
+      border: 4px solid #2d2f2e; }
+    .iphone.smart-5 .iphone-main .iphone-camera .cameras .sensors .sensor-2 {
+      border: 2px solid #2d2f2e; }
+    .iphone.smart-5 .iphone-antenna > li {
+      background: #2d2f2e; }
+  .iphone.smart-6 {
+    background: #ce324a;
+    z-index: -5;
+    animation: smart5 1.7s forwards; }
+    .iphone.smart-6 .iphone-main .iphone-buttons > li {
+      background: #ce324a; }
+      .iphone.smart-6 .iphone-main .iphone-buttons > li.lock {
+        background: #ce324a; }
+    .iphone.smart-6 .iphone-main .iphone-camera .cameras > div {
+      border: 4px solid #ce324a; }
+    .iphone.smart-6 .iphone-main .iphone-camera .cameras .sensors .sensor-2 {
+      border: 2px solid #ce324a; }
+    .iphone.smart-6 .iphone-antenna > li {
+      background: #ce324a; }
+  .iphone .iphone-main {
+    position: relative;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 310px;
+    height: 630px;
+    border-radius: 50px;
+    border: 2px solid #d2cfd861;
+    box-shadow: inset 5px 0px #ffffff66, inset -5px 0px #ffffff66; }
+    .iphone .iphone-main .iphone-buttons {
+      position: absolute;
+      right: -14px;
+      top: 80px;
+      width: 4px;
+      display: flex;
+      flex-wrap: wrap; }
+      .iphone .iphone-main .iphone-buttons > li {
+        flex-basis: 100%;
+        width: 100%;
+        height: 60px;
+        background: #e5e0f3;
+        margin-bottom: 20px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        box-shadow: inset -2px 1px 3px -1px #7a797b; }
+        .iphone .iphone-main .iphone-buttons > li.lock {
+          height: 30px;
+          background: #e5e0f3; }
+    .iphone .iphone-main .iphone-camera {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 120px;
+      height: 120px;
+      border: 4px solid #1b1b1b1a;
+      border-radius: 40px; }
+      .iphone .iphone-main .iphone-camera .cameras {
+        position: relative;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px;
+        align-items: center;
+        justify-content: center; }
+        .iphone .iphone-main .iphone-camera .cameras > div {
+          position: relative;
+          background: #000;
+          width: 40px;
+          height: 40px;
+          flex-basis: 40px;
+          border-radius: 50%;
+          box-shadow: 2px 2px 10px -4px #0B090A, -2px -2px 10px -4px #0b090a;
+          border: 4px solid #e5e0f3;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .iphone .iphone-main .iphone-camera .cameras > div > .lens-1 {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            background-image: linear-gradient(to bottom left, #000, #21252d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .iphone .iphone-main .iphone-camera .cameras > div > .lens-1 .lens-2 {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background: #0c1117;
+              box-shadow: inset 2px -2px 3px -1px #0f2544, inset 1px 0px 4px -1px #6f9fe0; }
+              .iphone .iphone-main .iphone-camera .cameras > div > .lens-1 .lens-2::after {
+                content: "";
+                position: absolute;
+                left: 8px;
+                top: 6px;
+                border-radius: 50%;
+                width: 2.3px;
+                height: 3px;
+                background: #a8abc75c; }
+          .iphone .iphone-main .iphone-camera .cameras > div.cam-2 > .lens-1 {
+            width: 26px;
+            height: 26px; }
+            .iphone .iphone-main .iphone-camera .cameras > div.cam-2 > .lens-1 .lens-2 {
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background: #0c1117;
+              box-shadow: inset 2px -2px 3px -1px #0f2544, inset 1px 0px 4px -1px #6f9fe0;
+              position: relative; }
+              .iphone .iphone-main .iphone-camera .cameras > div.cam-2 > .lens-1 .lens-2::after {
+                content: "";
+                position: absolute;
+                left: 3px;
+                top: 3px;
+                border-radius: 50%;
+                width: 2.3px;
+                height: 3px;
+                background: #a8abc75c; }
+      .iphone .iphone-main .iphone-camera .sensors {
+        position: relative;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px;
+        align-items: center;
+        justify-content: center; }
+        .iphone .iphone-main .iphone-camera .sensors .sensor-1 {
+          top: 28px;
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #838184;
+          border: 1.4px solid #777077; }
+        .iphone .iphone-main .iphone-camera .sensors .sensor-2 {
+          top: 50px;
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #f9e6d6;
+          border: 2px solid #dad9da;
+          box-shadow: 4px 2px 9px -5px #585258; }
+    .iphone .iphone-main .logo-apple {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 80px;
+      height: auto;
+      filter: contrast(3); }
+  .iphone .iphone-antenna {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0; }
+    .iphone .iphone-antenna > li {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #d3c9dd; }
+      .iphone .iphone-antenna > li.right-top {
+        top: 70px;
+        right: 0; }
+      .iphone .iphone-antenna > li.right-bottom {
+        bottom: 70px;
+        right: 0; }
+      .iphone .iphone-antenna > li.left-top {
+        top: 70px;
+        left: 0; }
+      .iphone .iphone-antenna > li.left-bottom {
+        left: 0;
+        bottom: 70px; }
+
+@keyframes smart1 {
+  100% {
+    transform: rotate(-20deg) translateX(-50%) translateY(-50%); } }
+@keyframes smart2 {
+  100% {
+    transform: rotate(-40deg) translateX(-50%) translateY(-50%); } }
+@keyframes smart3 {
+  100% {
+    transform: rotate(-60deg) translateX(-50%) translateY(-50%); } }
+@keyframes smart4 {
+  100% {
+    transform: rotate(-80deg) translateX(-50%) translateY(-50%); } }
+@keyframes smart5 {
+  100% {
+    transform: rotate(-100deg) translateX(-50%) translateY(-50%); } }
+@keyframes smart6 {
+  100% {
+    transform: rotate(-120deg) translateX(-50%) translateY(-50%); } }
+
+/*# sourceMappingURL=main.css.map */
